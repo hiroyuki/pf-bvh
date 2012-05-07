@@ -1,0 +1,6 @@
+<controls>
+    <SliderInt_mode>
+        <name>mode</name>
+        <value>2</value>
+    </SliderInt_mode>
+</controls>
