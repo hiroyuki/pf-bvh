@@ -3,8 +3,9 @@
 #include "ofMain.h"
 #include "ofxBvh.h"
 #include "ofxVoronoi.h"
-#include "Shape.h"
+#include "myLine.h"
 #include "ofxSimpleGuiToo.h"
+#include "myShape.h"
 
 class testApp : public ofSimpleApp{
 
@@ -22,10 +23,15 @@ class testApp : public ofSimpleApp{
 	void windowResized(int w, int h);
 	void dragEvent(ofDragInfo dragInfo);
 	void gotMessage(ofMessage msg);
-	
+    
+    int showNum, showAmount;
 	vector<ofxBvh> bvh;
 	ofEasyCam cam;
     ofxVoronoi voronoi;
     ofSoundPlayer track;
-	
+	vector< myLine* > lines;
+    vector< myShape > shapes;
+    vector<ofPoint>tmp_vec;
+    vector< ofColor > color;
+    vector< ofPoint >frame;
 };
