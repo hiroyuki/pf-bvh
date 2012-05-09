@@ -151,7 +151,8 @@ void testApp::update()
             }
             while ( color.size() < shapes.size() )
             {
-                color.push_back( ofColor( ofRandom(255), ofRandom(255),ofRandom(255) ) );
+                int cc = ofRandom(255);
+                color.push_back( ofColor( cc, cc, cc ) );
             }
             for ( int i = 0; i < shapes.size(); i++ )
             {
